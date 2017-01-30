@@ -13,7 +13,7 @@ public void mouseDragged()//optional
 public void sierpinski(int x, int y, int len) 
 {
 	fill(255,255,0);
-	if(len <= 20)
+	if(len <= 1)
 	{
 		rect(x,y,len,len);
 	}
