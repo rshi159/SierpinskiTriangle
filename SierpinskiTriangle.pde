@@ -5,9 +5,7 @@ public void setup()
 public void draw()
 {
 	background(150);
-	sierpinski(40,680,640);
-	bob.show();
-	bob.move();
+	sierpinski(40,640,640);
 }
 public void mouseDragged()//optional
 {
@@ -17,7 +15,7 @@ public void sierpinski(int x, int y, int len)
 	fill(255,255,0);
 	if(len <= 20)
 	{
-		triangle(x,y,x+len,y,x+len/2,y-len);
+		rect(x,y,len,len);
 	}
 	else
 	{
